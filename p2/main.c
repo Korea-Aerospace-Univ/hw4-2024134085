@@ -7,9 +7,8 @@ int main(void)
     scanf("%d", &n);
     char str[i];
     
+    scanf("%s", &str);
     for(i=0;i<n;i++){
-        scanf("%s", &str);
-        
         if(str[i]>='a' && str[i]<='z'){
             cCnt++;
             iCnt = 0;
