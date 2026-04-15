@@ -11,14 +11,14 @@ int main(void)
         scanf("%d", &guess);
         cnt+=1;
         if(guess > ans){
-            printf("%d 보다 낮습니다\n", guess);
+            printf("%d>?\n", guess);
         } else if (guess < ans){
-            printf("%d 보다 높습니다\n", guess);
+            printf("%d<?\n", guess);
         } else{
-            printf("%d 정답입니다\n", guess);
+            printf("%d==?\n", guess);
         }
     } while (guess != ans);
-    printf("시도횟수는 %d회", cnt);
+    printf("%d", cnt);
 
     return 0;
 }
