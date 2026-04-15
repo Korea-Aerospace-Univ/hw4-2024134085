@@ -5,18 +5,19 @@ int main(void)
     int n, i, cCnt=0, cMax=0, iCnt=0, iMax=0;
     
     scanf("%d", &n);
-    char str[i];
+    char ch;
     
-    scanf("%s", &str);
     for(i=0;i<n;i++){
-        if(str[i]>='a' && str[i]<='z'){
+        scanf("%c", &ch);
+        
+        if(ch>='a' && ch<='z'){
             cCnt++;
             iCnt = 0;
             if(cCnt > cMax){
                 cMax = cCnt;
             }
         }
-        if(str[i]>='0' && str[i]<='9'){
+        if(ch>='0' && ch<='9'){
             iCnt++;
             cCnt = 0;
             if(iCnt > iMax){
@@ -28,8 +29,8 @@ int main(void)
             iCnt = 0;
         }
     }
-    printf("%d",cMax);
-    printf("%d",iMax);
+    printf("%d\n",cMax);
+    printf("%d\n",iMax);
     
     return 0;
 }
