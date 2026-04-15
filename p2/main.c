@@ -7,7 +7,7 @@ int main(void)
     
     scanf("%d", &n);
     
-    for(i=0; i<=n; i+=1){
+    for(i=0; i<n; i++){
         scanf("%c", &ch);
         
         if(ch>='a' && ch<='z'){
