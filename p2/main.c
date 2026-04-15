@@ -2,13 +2,14 @@
 
 int main(void)
 {
-    int n, i, cCnt=0, cMax=0, iCnt=0, iMax=0;
+    int n, i;
+    int cCnt=0, cMax=0, iCnt=0, iMax=0;
     char ch;
     
     scanf("%d", &n);
     
-    for(i=0; i<n; i++){
-        scanf("%c", &ch);
+    for(i = 0; i < n; i++){
+        scanf(" %c", &ch);
         
         if(ch>='a' && ch<='z'){
             cCnt++;
