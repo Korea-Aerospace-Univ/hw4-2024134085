@@ -3,11 +3,11 @@
 int main(void)
 {
     int n, i, cCnt=0, cMax=0, iCnt=0, iMax=0;
-    
-    scanf("%d", &n);
     char ch;
     
-    for(i=0;i<n;i++){
+    scanf("%d", &n);
+    
+    for(i=0; i<=n; i+=1){
         scanf("%c", &ch);
         
         if(ch>='a' && ch<='z'){
@@ -17,7 +17,7 @@ int main(void)
                 cMax = cCnt;
             }
         }
-        if(ch>='0' && ch<='9'){
+        else if(ch>='0' && ch<='9'){
             iCnt++;
             cCnt = 0;
             if(iCnt > iMax){
